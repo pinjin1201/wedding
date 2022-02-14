@@ -1,0 +1,337 @@
+
+/* 
+  1. wedding about
+  2. wedding studio
+*/
+
+
+/*** wedding about ***/
+.wedding-about {
+  height: 600px;
+  background-color: #0a3250;
+  text-align: center;
+  padding-top: 80px;
+}
+/* title */
+.wedding-information-title {
+  font-size: 3em;
+  letter-spacing: 8px;
+  line-height: 0.9em;
+  color: #826414;
+  margin-bottom: 100px;
+}
+/* information */
+.wedding-information {
+  display: flex;
+  justify-content: center;
+  color: #c8961e;
+}
+.wedding-time, .wedding-space {
+  font-size: 0.8em;
+}
+.wedding-time .title, .wedding-space .title {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.wedding-time .text, .wedding-space .text {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+/* demarcation */
+.wedding-information .demarcation {
+  width: 3px; height: 80px;
+  background-color: #645014;
+  margin: 0 100px 80px 150px;
+}
+/* invite btn */
+.wedding-about .invitation-btn {
+  margin: 40px auto;
+}
+.wedding-about .invitation-btn a, 
+.wedding-about .invitation-btn a:visited {
+  color: #645014;
+  width: 150px;
+  border: 3.5px solid #645014;
+  padding: 20px 40px;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.wedding-about .invitation-btn a:hover {
+  cursor: pointer;
+  background-color: rgba(50, 70, 50, 0.5);
+}
+
+/*
+  wedding about
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 1270px) {
+  /* title */
+  .wedding-information-title {
+    font-size: 2.5em;
+  }
+  .wedding-time, .wedding-space {
+    font-size: 0.7em;
+  }
+  /* demarcation */
+  .wedding-information .demarcation {
+    /* margin: 0 100px 80px 150px */
+    margin-right: 65px;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 680px) {
+  /* title */
+  .wedding-information-title {
+    font-size: 2.3em;
+  }
+  .wedding-time, .wedding-space {
+    font-size: 0.6em;
+  }
+  /* invite btn */
+  .wedding-about .invitation-btn a {
+    width: 120px;
+    padding: 20px 15px;
+  }
+}
+/*** wedding about mobile ***/
+/* screen width <= 580 px */
+@media (max-width: 580px) {
+  /* wedding about */
+  .wedding-about {
+    height: 800px;
+  }
+  /* title */
+  .wedding-information-title {
+    font-size: 2.6em;
+    margin-bottom: 80px;
+  }
+  /* information */
+  .wedding-information {
+    display: block;
+  }
+  .wedding-time .title, .wedding-space .title {
+    font-size: 2em;
+  }
+  /* demarcation */
+  .wedding-information .demarcation {
+    width: 1px; height: 30px;
+    margin: 30px auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  /* invite btn */
+  .wedding-about .invitation-btn {
+    margin-top: 130px;
+  }
+}
+@media (max-width: 480px) {
+    /* title */
+  .wedding-information-title {
+    font-size: 2.3em;
+  }
+}
+@media (max-width: 390px) {
+    /* title */
+  .wedding-information-title {
+    font-size: 2em;
+  }
+}
+
+
+
+/*** wedding studio ***/
+.wedding-studio {
+  height: 900px;
+  background: url('../image/information.jpg') no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.8;
+  color: #e1e6e1;
+  text-shadow: 0 0 3px #0a0a21;
+  text-align: center;
+  padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* studio */
+.wedding-studio .studio {
+  font-size: 3em;
+  letter-spacing: 8px;
+  line-height: 0.9em;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+/* studio title */
+.wedding-studio .studio-title {
+  font-size: 1.3em;
+  margin-bottom: 50px;
+  letter-spacing: 3px;
+}
+/* studio text */
+.wedding-studio .studio-text {
+  font-size: 0.85em;
+  margin-bottom: 50px;
+  line-height: 1.4em;
+}
+/* invite btn */
+.wedding-studio .studio-url-btn a,
+.wedding-studio .studio-url-btn a:visited {
+  display: block;
+  color: #e1e6e1;
+  width: 250px;
+  margin: 80px auto;
+  padding: 15px 30px;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.wedding-studio .studio-url-btn a:hover {
+  cursor: pointer;
+  border: 3px solid #e1e6e1;
+  margin-top: 77px;
+}
+
+/*
+  wedding studio
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 1000px) {
+  /* wedding studio */
+  .wedding-studio {
+    height: 830px;
+    background-image: 
+      url('../image/information.jpg'),
+      linear-gradient(#3c1e1e, #ebf8e1, #3c1e1e)
+    ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* studio title */
+  .wedding-studio .studio-title {
+    font-size: 1em;
+  }
+  /* studio text */
+  .wedding-studio .studio-text {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 800px) {
+  /* wedding studio */
+  .wedding-studio {
+    height: 800px;
+  }
+  /* studio */
+  .wedding-studio .studio {
+    font-size: 2.3em;
+    margin-bottom: 70px;
+  }
+  /* studio title */
+  .wedding-studio .studio-title {
+    margin-bottom: 30px;
+  }
+  /* invite btn */
+  .wedding-studio .studio-url-btn a,
+  .wedding-studio .studio-url-btn a:visited {
+    width: 200px;
+    font-size: 1em;
+    margin: 150px auto;
+  }
+  .wedding-studio .studio-url-btn a:hover {
+    margin-top: 147px;
+  }
+}
+@media (max-width: 650px) {
+  /* wedding studio */
+  .wedding-studio {
+    height: 700px;
+  }
+  /* studio */
+  .wedding-studio .studio {
+    font-size: 2em;
+  }
+  /* studio title */
+  .wedding-studio .studio-title {
+    font-size: 0.8em;
+  }
+  /* studio text */
+  .wedding-studio .studio-text {
+    font-size: 0.6em;
+  }
+  /* invite btn */
+  .wedding-studio .studio-url-btn a,
+  .wedding-studio .studio-url-btn a:visited {
+    margin: 80px auto;
+  }
+  .wedding-studio .studio-url-btn a:hover {
+    margin-top: 77px;
+  }
+}
+@media (max-width: 500px) {
+  /* wedding studio */
+  .wedding-studio {
+    height: 600px;
+  }
+  /* studio */
+  .wedding-studio .studio {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+  }
+  /* studio title */
+  .wedding-studio .studio-title {
+    font-size: 0.7em;
+  }
+  /* studio text */
+  .wedding-studio .studio-text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 450px) {
+  /* wedding studio */
+  .wedding-studio {
+    height: 520px;
+    padding-top: 40px;
+  }
+  /* studio */
+  .wedding-studio .studio {
+    margin-bottom: 60px;
+  }
+  /* studio title */
+  .wedding-studio .studio-title {
+    font-size: 0.6em;
+    margin-bottom: 20px;
+  }
+  /* studio text */
+  .wedding-studio .studio-text {
+    margin-bottom: 30px;
+  }
+  /* invite btn */
+  .wedding-studio .studio-url-btn a,
+  .wedding-studio .studio-url-btn a:visited {
+    width: 180px;
+    font-size: 0.8em;
+    margin: 75px auto;
+
+  }
+  .wedding-studio .studio-url-btn a:hover {
+    margin-top: 72px;
+  }
+}
+@media (max-width: 400px) {
+  /* studio */
+  .wedding-studio .studio {
+    font-size: 1.3em;
+    margin-bottom: 70px;
+  }
+}
