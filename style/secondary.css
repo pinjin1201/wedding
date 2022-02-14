@@ -1,0 +1,179 @@
+
+/* 
+  1. wedding cookie
+  2. invitation
+*/
+
+/*** wedding cookie ***/
+.wedding-cookie {
+  margin: 120px auto;
+  max-width: 900px;
+  text-align: center;
+}
+/* title */
+.wedding-cookie .title {
+  margin-bottom: 60px;
+}
+.wedding-cookie .title a,
+.wedding-cookie .title a:visited {
+  font-size: 2em;
+  letter-spacing: 7px;
+  color: #DB8F00;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+.wedding-cookie .title a:hover {
+  cursor: pointer;
+  color: #003d79;
+}
+/* text */
+.wedding-cookie .text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #003d79;
+  font-size: 0.9em;
+  margin-bottom: 130px;
+}
+/* cookie image */
+.wedding-cookie .cookie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.wedding-cookie .cookie img {
+  margin-bottom: 50px;
+}
+/*
+  wedding cookie
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 630px) {
+  /* title */
+  .wedding-cookie .title a,
+  .wedding-cookie .title a:visited {
+    letter-spacing: 4px;
+    font-size: 1.8em;
+  }
+  /* text */
+  .wedding-cookie .text {
+    font-size: 0.8em;
+    margin-bottom: 110px;
+  }
+}
+@media (max-width: 510px) {
+  /* title */
+  .wedding-cookie .title a,
+  .wedding-cookie .title a:visited {
+    font-size: 1.5em;
+  }
+  /* text */
+  .wedding-cookie .text {
+    font-size: 0.7em;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 415px) {
+  /* title */
+  .wedding-cookie .title a,
+  .wedding-cookie .title a:visited {
+    letter-spacing: 1px;
+    font-size: 1.4em;
+  }
+  /* text */
+  .wedding-cookie .text {
+    margin-bottom: 80px;
+  }
+}
+
+
+/*** invitation ***/
+.invitation {
+  height: 250px;
+  background-color:#826414;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 60px;
+  font-size: 1.3em;
+  letter-spacing: 7px;
+}
+/* text */
+.invitation .text {
+  margin-bottom: 40px;
+}
+/* btn */
+.invitation .invitation-btn a,
+.invitation .invitation-btn a:visited {
+  font-size: 1.1em;
+  width: 150px;
+  margin: 0 auto;
+  border: 5px solid #000;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #000;
+}
+.invitation .invitation-btn a:hover {
+  cursor: pointer;
+  background-color: rgba(50,50,30,0.3);
+}
+/*
+  invitation
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 500px) {
+  /* text */
+  .invitation .text {
+    font-size: 0.9em;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 410px) {
+  /* text */
+  .invitation .text {
+    letter-spacing: 1px;
+  }
+  /* btn */
+  .invitation .invitation-btn a {
+    font-size: 0.9em;
+    width: 120px;
+    padding: 10px 18px;
+    letter-spacing: 5px;
+  }
+}
+
+
+/*** footer ***/
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+/* title */
+.footer .title {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+/* copyright */
+.footer .copyright {
+  font-size: 0.65em;
+  margin-bottom: 20px;
+}
+/*
+  footer
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 500px) {
+  /* title */
+  .footer .title {
+    font-size: 0.8em;
+  }
+  /* copyright */
+  .footer .copyright {
+    font-size: 0.4em;
+  }
+}
