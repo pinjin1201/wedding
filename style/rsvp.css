@@ -1,0 +1,413 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*
+  1. nav
+  2. rsvp / submitted page
+  3. footer
+*/
+
+/*** nav ***/
+.menu {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.menu div a, .menu div a:visited {
+  font-size: 0.8em;
+  letter-spacing: -1px;
+  padding-right: 20px;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: #2f4f4f;
+}
+.menu div a:hover {
+  cursor: pointer;
+  color: #648264;
+}
+
+/*** nav mobile-menu */
+.mobile-menu {
+  display: none;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(180, 200, 180, 0.8);
+}
+.mobile-menu .lines {
+  position: absolute;
+  top: 13px; right: 20px;
+  cursor: pointer;
+}
+.mobile-menu .lines .line {
+  margin-bottom: 8px;
+  width: 30px; height: 2px;
+  background-color: #2f4f4f;
+}
+.mobile-menu-clicked {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%; height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(200, 250, 200, 0.9);
+  padding-top: 100px;
+  z-index: 1;
+}
+.mobile-menu-clicked a,
+.mobile-menu-clicked a:visited {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mobile-menu-clicked .close {
+  position: fixed;
+  top: 5px; right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.mobile-menu-clicked a:hover,
+.mobile-menu-clicked .close:hover {
+  color: #467846;
+}
+
+
+/*
+  body, nav
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 1200px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu div {
+    font-size: 0.8em;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu div {
+    letter-spacing: -1px;
+  }
+}
+
+@media (max-width: 720px) {
+  .menu div {
+    font-size: 0.7em;
+    padding-right: 0px;
+  }
+}
+
+@media(max-width: 630px) {
+  .menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+
+/*** RSVP ***/
+.rsvp {
+  margin: 160px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* form */
+.rsvp form {
+  width: 450px;
+  margin-right: 10px;
+}
+
+/* form title */
+.rsvp form .title {
+  font-size: 2.6em;
+  letter-spacing: -4px;
+  color: rgba(30,50,30,0.9);
+  margin-bottom: 30px;
+}
+
+/* form data */
+.rsvp form .data {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* name, phone, email */
+.rsvp form .data div div label,
+.rsvp form .data label {
+  margin-bottom: 30px;
+  color: rgb(80,100,80);
+}
+.rsvp form .data div div input,
+.rsvp form .data input { 
+  height: 40px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* name, phone */
+.rsvp form .data div{
+  display: flex;
+}
+.rsvp form .data div div{
+  flex-direction: column;
+  margin-right: 20px;
+}
+.rsvp form .data div div input {
+  width: 180px;
+}
+
+/* email */
+.rsvp form .data input {
+  margin-top: 15px;
+  width: 380px;
+}
+
+/* submit */
+.rsvp form input[type="submit"] {
+  width: 380px;
+  height: 50px;
+  border: none;
+  background: rgb(214, 187, 110);
+  margin-top: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.rsvp form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(214, 187, 110, 0.7);
+}
+
+
+/* aside */
+.rsvp .aside {
+  width: 250px; height: 150px;
+  background: rgb(214, 187, 110); 
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px 25px;
+}
+/* aside title */
+.aside .title {
+  letter-spacing: 6px;
+}
+/* aside demarcation */
+.aside .demarcation {
+  border-top: 1px solid rgba(230,230,230,0.3);
+  margin: 20px 0;
+}
+/* aside detail */
+.aside .detail {
+  font-size: 0.7em;
+  color: rgba(240,240,240,0.8);
+}
+
+/*
+  rsvp
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 900px) {
+  .rsvp {
+    margin: 100px auto;
+  }
+}
+@media (max-width: 790px) {
+  .rsvp {
+    flex-wrap: wrap-reverse;
+  }
+  /* form */
+  .rsvp form {
+    width: 600px;
+    padding-left: 120px;
+    margin-top: 80px;
+  }
+}
+@media (max-width: 580px) {
+  /* form */
+  .rsvp form {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 530px) {
+  /* name, phone */
+  .rsvp form .data div{
+    display: block;
+  }
+  /* name, phone, email */
+  .rsvp form .data div div input,
+  .rsvp form .data input { 
+    height: 40px;
+    margin-top: 15px;
+    width: 277px;
+  }
+  /* email */
+  .rsvp form .data input {
+    width: 277px;
+  }
+  /* submit */
+  .rsvp form input[type="submit"] {
+    width: 277px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 430px) {
+  /* form */
+  .rsvp form {
+    padding-left: 60px;
+  }
+  /* form title */
+  .rsvp form .title {
+    font-size: 2em;
+    letter-spacing: -2px;
+  }
+}
+@media (max-width: 400px) {
+  /* form */
+  .rsvp form {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 380px) {
+  /* form */
+  .rsvp form {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 365px) {
+  /* form */
+  .rsvp form {
+    padding-left: 35px;
+  }
+}
+
+
+
+/*** submit page ***/
+.submit-page {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.submit-page .title {
+  color: rgba(10, 10, 10, 0.8);
+  font-size: 3em;
+  margin-top: 180px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+.submit-page .text {
+  margin-bottom: 60px;
+}
+.submit-page .btn {
+  width: 250px;
+  font-weight: bold;
+  font-size: 1.1em;
+  background: rgb(214, 187, 110);  
+  padding: 7px 0;
+  margin: 0 auto;
+  margin-bottom: 250px;
+  border: none;
+
+}
+.submit-page .btn a,
+.submit-page .btn a:visited {
+  display: block;
+  width: 250px;
+  color: #fff;
+  text-decoration: none;
+}
+.submit-page .btn:hover {
+  cursor: pointer;
+  background: rgba(214, 187, 110, 0.5);  
+}
+/*
+  submit page
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 850px) {
+  .submit-page {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 630px) {
+  .submit-page .title {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 500px) {
+  .submit-page .btn {
+    margin-bottom: 180px;
+  }
+}
+
+
+
+
+/*** footer ***/
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+/* title */
+.footer .title {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+/* copyright */
+.footer .copyright {
+  font-size: 0.65em;
+  margin-bottom: 20px;
+}
+/*
+  footer
+  max-width: 1200 px
+  min-width: 360 px
+*/
+@media (max-width: 500px) {
+  /* title */
+  .footer .title {
+    font-size: 0.8em;
+  }
+  /* copyright */
+  .footer .copyright {
+    font-size: 0.4em;
+  }
+}
+
+
+
