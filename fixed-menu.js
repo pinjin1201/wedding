@@ -42,7 +42,10 @@ $(function () {
   const studioScrollTop = calculateHeight($studio)     // 2314
   const cookieScrollTop = calculateHeight($cookie)     // 3234
   const rsvpScrollTop = calculateHeight($rsvp) - 281   // 4000
-
+  
+  // screen width
+  const screenWidth = $window.width()
+  
   // calculate block scrollTop
   function calculateHeight(item) {
     return item.offset().top
@@ -214,6 +217,10 @@ $(function () {
 
   })
 
-
+  // calculate fixed menu position left
+  const number = (screenWidth - 1200) / 2
+  if (screenWidth >= 1200) {
+    $fixedMenu.css('left', `+=${number}`)
+  }
 
 })
